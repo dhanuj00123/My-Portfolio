@@ -1,11 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 
 const HeroPage = () => {
   return (
     <>
-      <section>
-        <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 mb-72">
+      <section className="mb-72">
+        <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 ">
           <h1 className=" mt-44 scroll-m-20 text-2xl font-normal  lg:text-4xl">
             I design and build clean websites
           </h1>
@@ -19,8 +18,6 @@ const HeroPage = () => {
             <div className="text-base font-medium leading-none">Hire me</div>
           </Button>
         </div>
-        <Separator className="mb-12" />
-        <Separator />
       </section>
     </>
   );

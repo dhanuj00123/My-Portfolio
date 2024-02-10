@@ -15,6 +15,19 @@ module.exports = {
       screens: {
         "2xl": "1400px",
       },
+      pattern: {
+        grid: {
+          size: "12px 12px",
+          // You can customize the color here
+          color: "rgba(0, 0, 0, 0.05)",
+        },
+      },
+      pattern: {
+        dots: {
+          size: "10px", // Adjust the size of the dots here
+          color: "white", // Adjust the color of the dots here
+        },
+      },
     },
     extend: {
       colors: {

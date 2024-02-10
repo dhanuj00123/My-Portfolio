@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import React from "react";
-import { ModeToggle } from "../mode-toggle";
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
@@ -88,13 +87,6 @@ const NavBar = () => {
             ContactMe
           </NavigationMenuLink>
         </NavigationMenuItem>
-
-        {/* <NavigationMenuItem>
-          
-          <NavigationMenuList>
-            <ModeToggle />
-          </NavigationMenuList>
-        </NavigationMenuItem> */}
       </NavigationMenuList>
     </NavigationMenu>
   );

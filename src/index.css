@@ -64,6 +64,34 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
   }
+  :root.dark::before {
+    --line: hsla(290, 67%, 88%, 0.237);
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background: linear-gradient(90deg, var(--line) 1px, transparent 1px 10vmin)
+        0 -5vmin / 10vmin 10vmin,
+      linear-gradient(var(--line) 1px, transparent 1px 10vmin) 0 -5vmin / 10vmin
+        10vmin;
+    mask: linear-gradient(-15deg, transparent 30%, white);
+    top: 0;
+    z-index: -1;
+  }
+  :root.light::before {
+    --line: hsla(0, 0%, 0%, 0.224);
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background: linear-gradient(90deg, var(--line) 1px, transparent 1px 10vmin)
+        0 -5vmin / 10vmin 10vmin,
+      linear-gradient(var(--line) 1px, transparent 1px 10vmin) 0 -5vmin / 10vmin
+        10vmin;
+    mask: linear-gradient(-15deg, transparent 30%, white);
+    top: 0;
+    z-index: -1;
+  }
 }
 
 @layer base {
